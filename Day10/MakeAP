@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt();
+
+        while (t-- > 0) {
+            int a = scanner.nextInt();
+            int c = scanner.nextInt();
+            // Your code goes here
+            if(a%2 == c%2){
+                System.out.println((a+c)/2);
+            }
+            else{
+                System.out.println(-1);
+            }
+        }
+    }
+}
